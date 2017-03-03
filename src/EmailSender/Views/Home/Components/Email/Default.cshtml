@@ -1,3 +1,16 @@
 ﻿@model EmailViewModel
 
-<h1>@Model.Message</h1>
+<h1>Email Sender</h1>
+
+<form asp-controller="Home" asp-action="Index" asp-antiforgery="true" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <label asp-for="RecieverEmail"></label>
+    <input asp-for="RecieverEmail" />
+    <label asp-for="Subject"></label>
+    <input asp-for="Subject" />
+    <label asp-for="Message"></label>
+    <input asp-for="Message" />
+
+    <button type="submit">Send Email</button>
+</form>

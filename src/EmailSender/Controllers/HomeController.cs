@@ -35,11 +35,6 @@ namespace EmailSender.Controllers
             return View(viewModel);
         }
 
-        public IActionResult Email()
-        {
-            return ViewComponent(nameof(Email));
-        }
-
         public IActionResult Error()
         {
             return View();
