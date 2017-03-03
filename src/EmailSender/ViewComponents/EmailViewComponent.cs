@@ -11,7 +11,8 @@ namespace EmailSender.ViewComponents
     {
         public EmailViewComponent()
         {
-            // USE ME FOR GREATER GOOD!
+            // USE ME FOR GREATER GOOD! 
+            // Like injecting the dbContext or something
         }
 
         public async Task<IViewComponentResult> InvokeAsync()

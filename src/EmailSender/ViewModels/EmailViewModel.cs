@@ -7,6 +7,8 @@ namespace EmailSender.ViewModels
 {
     public class EmailViewModel
     {
+        public string RecieverEmail { get; set; }
+        public string Subject { get; set; }
         public string Message { get; set; }
     }
 }
